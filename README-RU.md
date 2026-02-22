@@ -43,8 +43,8 @@
 ## Как использовать
 
 1. **Скопируй промпт**  
-   - [`Prompt/PYTHON-CODER-V3.2-EN.md`](Prompt/PYTHON-CODER-V3.2-EN.md) (английская версия)  
-   - [`Prompt/PYTHON-CODER-V3.2-RU.md`](Prompt/PYTHON-CODER-V3.2-RU.md) (русская версия)
+   - [`Prompt/PYTHON-CODER-V3.2-EN.md`](Prompt/PYTHON-CODER-V3.2-EN) (английская версия)  
+   - [`Prompt/PYTHON-CODER-V3.2-RU.md`](Prompt/PYTHON-CODER-V3.2-RU) (русская версия)
 
 2. **Отправь его LLM** (Claude, GPT-4, DeepSeek и т.д.)  
    Помести описание задачи внутрь тегов `<user_data>`:
