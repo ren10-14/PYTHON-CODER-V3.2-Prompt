@@ -43,8 +43,8 @@ It's like having a **senior developer and a QA engineer** in your pocket.
 ## How to Use
 
 1. **Copy the prompt**  
-   - [`Prompt/PYTHON-CODER-V3.2-EN.md`](Prompt/PYTHON-CODER-V3.2-EN.md) (English version)  
-   - [`Prompt/PYTHON-CODER-V3.2-RU.md`](Prompt/PYTHON-CODER-V3.2-RU.md) (Russian version)
+   - [`Prompt/PYTHON-CODER-V3.2-EN.md`](Prompt/PYTHON-CODER-V3.2-EN) (English version)  
+   - [`Prompt/PYTHON-CODER-V3.2-RU.md`](Prompt/PYTHON-CODER-V3.2-RU) (Russian version)
 
 2. **Send it to an LLM** (Claude, GPT-4, DeepSeek, etc.)  
    Place your task description inside `<user_data>` tags:
