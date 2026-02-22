@@ -3,7 +3,9 @@
 A production-grade system prompt that turns any LLM into a **senior Python developer + QA engineer**.  
 Generates clean, type-safe, well-tested Python code with self-analysis and correction summaries.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.md)
+
+> 📘 [Русская версия](README-ru.md)
 
 ---
 
@@ -41,7 +43,8 @@ It's like having a **senior developer and a QA engineer** in your pocket.
 ## How to Use
 
 1. **Copy the prompt**  
-   - [`prompt/prompt-en.md`](prompt/prompt-en.md) (English version)  
+   - [`Prompt/PYTHON-CODER-V3.2-EN.md`](Prompt/PYTHON-CODER-V3.2-EN.md) (English version)  
+   - [`Prompt/PYTHON-CODER-V3.2-RU.md`](Prompt/PYTHON-CODER-V3.2-RU.md) (Russian version)
 
 2. **Send it to an LLM** (Claude, GPT-4, DeepSeek, etc.)  
    Place your task description inside `<user_data>` tags:
@@ -60,34 +63,22 @@ QA analysis (potential issues, edge cases, rule compliance)
 
 Correction summary (fixes, patterns, self-correction directive)
 
-Example
-See the examples/ folder for full examples:
+Examples
+See the Examples/ folder for complete examples:
 
-examples/Example-1-EN — simple function with full QA pipeline
+English examples:
+Examples/Example-1-EN.md — simple function with full QA pipeline
 
-examples/Example-2-EN2.md — negative example (what NOT to do)
+Examples/Example-2-EN.md — negative example (what NOT to do)
 
-examples/Example-3-EN.md — file I/O script with mocking
+Examples/Example-3-EN.md — file I/O script with mocking
 
-Quick peek (input → output):
+Russian examples:
+Examples/Examples-RU/Example-1-RU.md
 
-Input:
+Examples/Examples-RU/Example-2-RU.md
 
-xml
-<user_data>
-Write a function that takes a list of numbers and returns the sum of squares of even numbers
-</user_data>
-Output (simplified):
-
-python
-def sum_of_squares_of_evens(numbers: list[int | float]) -> int | float:
-    if not isinstance(numbers, list):
-        raise TypeError(f"Expected list, got {type(numbers).__name__}")
-    for i, x in enumerate(numbers):
-        if not isinstance(x, (int, float)):
-            raise TypeError(f"Element [{i}]: expected int or float, got {type(x).__name__}: {x!r}")
-    return sum(x ** 2 for x in numbers if x % 2 == 0)
-… plus tests, QA analysis, and correction summary.
+Examples/Examples-RU/Example-3-RU.md
 
 Compatibility
 Works best with:
@@ -105,22 +96,22 @@ Also works with many local models (Llama, Mistral) — reduce complexity for sma
 Repository Structure
 text
 python-coder-prompt/
-├── README.md                 # This file
-├── LICENSE                    # MIT license
-├── prompt/
-│   ├── prompt-en.md           # English version of the prompt
-│   └── prompt-ru.md           # Russian version of the prompt
-└── examples/
-    ├── en/                     # English examples
-    │   ├── example1.md
-    │   ├── example2.md
-    │   └── example3.md
-    └── ru/                     # Russian examples
-        ├── example1.md
-        ├── example2.md
-        └── example3.md
+├── README-en.md                 # This file
+├── README-ru.md                  # Russian version
+├── LICENSE.md                     # MIT license
+├── Prompt/
+│   ├── PYTHON-CODER-V3.2-EN.md    # English prompt
+│   └── PYTHON-CODER-V3.2-RU.md    # Russian prompt
+└── Examples/
+    ├── Example-1-EN.md             # English example 1
+    ├── Example-2-EN.md             # English example 2
+    ├── Example-3-EN.md             # English example 3
+    └── Examples-RU/                 # Russian examples folder
+        ├── Example-1-RU.md
+        ├── Example-2-RU.md
+        └── Example-3-RU.md
 License
-MIT © 2026 Sergey Shilov. See LICENSE for details.
+MIT © 2026 Sergey Shilov. See LICENSE.md for details.
 
 Author
 Sergey Shilov
@@ -133,4 +124,5 @@ Location: Russia
 
 Contributing
 Found a bug? Have an idea?
+Open an issue or submit a pull request. All contributions welcome!
 Open an issue or submit a pull request. All contributions welcome!
