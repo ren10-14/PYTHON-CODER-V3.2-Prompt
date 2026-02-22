@@ -5,7 +5,7 @@ Generates clean, type-safe, well-tested Python code with self-analysis and corre
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.md)
 
-> 📘 [Русская версия](README-ru.md)
+> > 🇬🇧 [Русская версия](README-RU.md)
 
 ---
 
