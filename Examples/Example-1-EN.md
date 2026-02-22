@@ -1,5 +1,3 @@
-
-markdown
 # Example 1 — Simple Function with Full QA Pipeline
 
 **Input:** Write a function that takes a list of numbers and returns the sum of squares of even numbers.
